@@ -1,0 +1,16 @@
+{% extends 'local/base.html' %}
+{% block title %}Contact - {{ block.super }}{% endblock %}
+
+{% block content %}
+<h1>Contact</h1>
+Contact Name:
+{{ contact_name }}
+
+Email:
+{{ contact_email }}
+
+Content:
+{{ form_content|safe|striptags }}
+
+</form>
+{% endblock %}

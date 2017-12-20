@@ -1,0 +1,17 @@
+{% extends "local/base.html" %}
+{% block content %}
+<div class="container">
+<div class="row">
+
+<div class="jumbotron">
+ <h3><a href="/{{post.id}}">{{ post.title }}</a></h3>
+<h6> on {{ post.date }}</h6>
+
+<div class = "container">
+	{{ post.body|safe|linebreaks}}
+</div>
+<br><br>
+</div>
+</div>
+</div>
+{% endblock %}

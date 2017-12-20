@@ -1,0 +1,13 @@
+{% extends "local/base.html" %}
+{% block content %}
+	<div class="container">
+<div class="row">
+
+<div class="jumbotron">
+ {% for post in object_list %}
+		<h5>{{ post.date|date:"Y-m-d" }}<a href="/activities/{{post.id}}">  {{ post.title }}</a></h5>
+	{% endfor %}
+</div>
+</div>
+</div>
+{% endblock %}
